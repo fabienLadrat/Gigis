@@ -1,0 +1,588 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Girondins FITNESS</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.min.js">
+jQuery.noConflict();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!--files-rquired-for-image-hover-effects-->
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<!--//files-rquired-for-image-hover-effects-->
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!----//End-top-nav-script---->
+</head>
+<body class="mainclass">
+		<!-----start-container---->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#">GIRONDINS FITNESS</a>
+					</div>
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Accueil</a></li>
+							<li class="page-scroll"><a href="#features" class="scroll">Le club</a></li>
+							<li class="page-scroll"><a href="#actu" class="scroll">Actualites</a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">Les coachs</a></li>
+							<li class="page-scroll"><a href="#gallery" class="scroll">nos cours</a></li>
+							<li class="page-scroll"><a href="#pricing" class="scroll">abonnements</a></li>
+							<li class="page-scroll"><a href="#partner" class="scroll">nous localiser</a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+					<div class="contact-info">
+						<p><span><label> </label></span>05 56 34 41 94</p>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide1.jpg" alt="" class="img-slide">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          		<span>Bienvenue</span>
+			          		<h1>Vous n'avez plus d'excuse</h1>
+			          		<label>Le meilleur endroit pour vous depasser</label>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide2.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          		<span>Bienvenue</span>
+			          		<h1>Vous n'avez plus d'excuse</h1>
+			          		<label>Le meilleur endroit pour vous depasser</label>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/pompadour.jpg" alt="">
+			           <div class="caption">
+			           	<div class="slide-text-info">
+			          		<span>Bienvenue</span>
+			          		<h1>Vous n'avez plus d'excuse</h1>
+			          		<label>Le meilleur endroit pour vous depasser</label>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!-----start-fearures---->
+			<div class="features" id="features">
+				<div class="container">
+					<div class="features-head text-center">
+						<h2>Bienvenue aux Girondins<span>FITNESS!</span></h2>
+						<p>Take care of your body. It's the only place you have to live.</p>
+					</div>
+					<div class="feature-grids">
+						<div class="col-md-2 feature-grid">
+							<h3><span class="fea-icon1"> </span> Bien-être</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div>
+						<div class="col-md-2 feature-grid">
+							<h3><span class="fea-icon2"> </span> Musculation</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div>
+						<div class="col-md-2 feature-grid">
+							<h3><span class="fea-icon3"> </span> Sport</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div>
+						<div class="col-md-2 feature-grid">
+							<h3><span class="fea-icon4"> </span> Santé</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div>
+						<div class="col-md-2 feature-grid">
+							<h3><span class="fea-icon4"> </span> Danse</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-fearures---->
+			<!-----start-actu---->
+			<div class="actu" id="actu">
+				<div class="container">
+					<div class="actu-head text-center">
+						<h2>Actualites</span></h2>
+						<p>Take care of your body. It's the only place you have to live.</p>
+					</div>
+					<div class="actu-grids">
+						<div class="col-md-12 actu-grid">
+							<h3><span class="fea-icon1"> </span> Nouveau site internet</h3>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+						</div>
+						<div></div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-actu---->
+			<!-----start-team---->
+			<div class="team" id="team">
+				<div class="container">
+					<div class="team-head text-center">
+						<h3>LES COACHS</h3>
+						<span> </span>
+					</div>
+					<div class="team-grids">
+						<div class="col-md-3 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkFred" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img dimension-photo" src="images/fred.png" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left b-delay03">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+											<h3>Voir son parcours</h3>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	<div class="t-member-info">
+						  		<h5>Frederic ERAY</h5>
+						  		<span>PRO INSTRUCTEUR ELITE LESMILLS</span>
+								<span>Createur du GBX FIT</span>
+						  	</div>
+						</div>
+						<div class="col-md-3 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkCaro" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img dimension-photo" src="images/caro.png" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left b-delay03">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Voir son parcours</h3>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	<div class="t-member-info">
+						  		<h5>Caroline DEMETS</h5>
+						  		<span>TRAINER LESMILLS</span><br>
+								<span>Manager du club</span>
+						  	</div>
+						</div>
+						<div class="col-md-3 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkMathilde" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img dimension-photo" src="images/mathilde.png" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left b-delay03">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Voir son parcours</h3>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	<div class="t-member-info">
+						  		<h5>Mathilde DETIENNE</h5>
+						  		<span>En formation BPJEPS</span><br>
+								  <span>&nbsp;</span>
+						  	</div>
+						</div>
+						<div class="col-md-3 team-grid">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkMika" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img dimension-photo" src="images/mika.png" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Voir son parcours</h3>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+						  	<div class="t-member-info">
+						  		<h5>Mickael VITRE</h5>
+						  		<span>PRO INSTRUCTEUR ELITE LESMILLS</span>
+								<span>Animateur de sport sur les quais</span>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-team---->
+			<!-----start-gallery---->
+			<div class="gallery" id="gallery">
+				<div class="container">
+					<div class="gallery-head text-center">
+						<h3>Nos cours</h3><span> </span>
+						<h4>Voici la liste des différents cours LESMILLS que nous proposons :</h4>
+					</div>
+					
+					<div class="gallery-grids">
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/bodycombat.png" alt="bodycombat">
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/bodypump.png" alt="bodypump">
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/rpm.png" alt="rpm">
+							</figure>
+						</div>
+						
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/sprint.png" alt="sprint">
+							</figure>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="gallery-grids">
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/bodyjam.png" alt="bodyjam">
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/bodybalance.png" alt="bodybalance">
+							</figure>
+						</div>
+
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/bodyattack.png" alt="bodyattack">
+							</figure>
+						</div>
+						
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/cxworx.png" alt="cxworx">
+							</figure>
+						</div>
+						
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="gallery-head text-center">
+						<h4>Nous avons également une liste de cours que vous retrouverez également aux GIRONDINS FITNESS :</h4>
+					</div>
+					<div class="gallery-grids">
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="" alt="GBi, GBX fit">
+							</figure>
+						</div>
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="" alt="Overdanse">
+							</figure>
+						</div>
+
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="" alt="Gym Posturale">
+							</figure>
+						</div>
+						
+						<div class="col-md-3 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="" alt="O2">
+							</figure>
+						</div>
+						
+						<div class="clearfix"> </div>
+					</div>
+					<div class="gallery-head text-center">
+						<a data-fancybox="gallery" id="linkA" href="images/planning.jpg">Consulter notre planning !</a>
+					</div>
+				</div>
+
+
+				
+			</div>
+			<!-----//End-gallery---->
+			<!-----start-pricing-plans---->
+			<div class="pricing-plans" id="pricing">
+				<div class="container">
+					<div class="pricing-plans-head text-center">
+						<h3>Abonnements annuel</h3><span> </span>
+					</div>
+					<div class="pricing-plan-grids">
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Santé</h4>
+								<p>490<label>€</label></p>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">Les cours LESMILLS</a></li>
+									<li><span> </span><a href="#">Musculation</a></li>
+									<li><span> </span><a href="#">Sauna</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Sport</h4>
+								<p>350<label>€</label></p>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">RPM</a></li>
+									<li><span> </span><a href="#">Sprint</a></li>
+									<li><span> </span><a href="#">GBi</a></li>
+									<li><span> </span><a href="#">GBX fit</a></li>
+									<li><span> </span><a href="#">Musculation</a></li>
+									<li><span> </span><a href="#">Sauna</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Musculation</h4>
+								<p>279<label>€</label></p>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">Musculation</a></li>
+									<li><span> </span><a href="#">Sauna</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="pricing-plan-grids">
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Bien-être</h4>
+								<p>350<label>€</label></p>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">O2</a></li>
+									<li><span> </span><a href="#">Gym posturale</a></li>
+									<li><span> </span><a href="#">LESMILLS BodyBalance</a></li>
+									<li><span> </span><a href="#">Musculation</a></li>
+									<li><span> </span><a href="#">Sauna</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Danse</h4>
+								<p>350<label>€</label></p>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">LESMILLS BodyJam</a></li>
+									<li><span> </span><a href="#">Overdanse</a></li>
+									<li><span> </span><a href="#">Musculation</a></li>
+									<li><span> </span><a href="#">Sauna</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Complet</h4>
+								<p>670<label>€</label></p>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">Sport</a></li>
+									<li><span> </span><a href="#">Santé</a></li>
+									<li><span> </span><a href="#">Bien-être</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-pricing-plans---->
+		<!-----//End-container---->
+	        <div class="mapsLocation" id="mapsLocation">
+				<div class="container">
+					<div class="mapsLocation-head text-center">
+					  <h3>Nous rejoindre</h3><span> </span>
+					</div>
+					<iframe class="hidden-xs hidden-sm hidden-md visible-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe class="hidden-xs hidden-sm visible-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="992" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe class="hidden-xs visible-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="768" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe class="visible-xs hidden-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26910.014407477323!2d-0.7212324767844358!3d44.85075418486385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1498652469906" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+  <div class="footer">
+  	<div class="container">
+	   <div class="footer-top">
+		 	<div class="social">
+			   <ul>
+				 <li><a class="facebook-text" href="https://www.facebook.com/Girondins-Fitness-129336806637/"> <i class="facebook"> </i> Suivez-nous sur Facebook</a></li>
+				 <div class="clear"> </div>
+			  </ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-bottom" id="contact">
+		  <div class="container contact">
+      	  	 <div class="col-md-4 contact-top_left">
+			  <h3>Nos coordonnées</h3>
+			  <p>Domaine de Rocquevielle, 107 avenue Marcel Dassault, 33700 Mérignac</p>
+			  <p>Ouvert de 9h00 à 20h30 du lundi au vendredi<br>Et de 9h00 à 17h00 le samedi</p>
+			  <ul class="contact_info">
+			  	<li><i class="mobile"> </i><span>05 56 34 41 94</span></li>
+			  	<li><i class="message"> </i><span class="msg">accueil@les-girondins.com</span></li>
+			  </ul>
+	 		 </div>
+      		 <div class="col-md-8 contact-top">
+			  <h3>Contactez-nous par email !</h3>
+			     <form method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" class="text" value="Nom Prenom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:20px">
+					 	<input type="text" class="text" value="Objet" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" style="margin-left:20px">
+					</div>
+					<div class="contact_bottom-textarea">
+	                   <textarea value="Votre message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Votre message</textarea>
+	                </div>
+	                <div class="form-submit1">
+			           <input name="submit" type="submit" id="submit" value="Envoyer"><br>
+			           <p class="m_msg">Veuillez entrer une adresse email valide !</p>
+					</div>
+					<div class="clear"></div>
+                 </form>
+             </div>
+            </div>
+      	    
+          </div>
+          <script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+		    <a href="#" class="hidden-xs hidden-sm hidden-md visible-lg topTopBackground" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">top </span></a>
+			<a href="#" class="visible-xs hidden-sm hidden-md hidden-lg topTopBackgroundMini" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">top </span></a>
+			</div>
+		</div>
+		<!----//End-footer---->
+		<!----//End-container---->  
+</body>
+</html>
+
