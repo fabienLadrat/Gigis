@@ -22,12 +22,20 @@ jQuery.noConflict();
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
-			jQuery(document).ready(function($) {
+			$(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					if(isMobile()){
+						$('.top-nav ul').css("display", "none");
+					}
 				});
 			});
+
+			function isMobile() {
+				try{ document.createEvent("TouchEvent"); return true; }
+				catch(e){ return false; }
+			}
 		</script>
 <!---- start-smoth-scrolling---->
 <!--files-rquired-for-image-hover-effects-->
@@ -71,6 +79,7 @@ jQuery.noConflict();
 			<!----- start-header---->
 			<div id="home" class="header">
 				<div class="container">
+					
 					<div class="logo">
 						<a href="#">GIRONDINS FITNESS</a>
 					</div>
@@ -78,13 +87,13 @@ jQuery.noConflict();
 					 <nav class="top-nav">
 						<ul class="top-nav">
 							<li class="active"><a href="#home" class="scroll">Accueil</a></li>
-							<li class="page-scroll"><a href="#features" class="scroll">Le club</a></li>
+							<!--<li class="page-scroll"><a href="#features" class="scroll">Le club</a></li>-->
 							<li class="page-scroll"><a href="#actu" class="scroll">Actualites</a></li>
 							<li class="page-scroll"><a href="#team" class="scroll">Les coachs</a></li>
-							<li class="page-scroll"><a href="#gallery" class="scroll">nos cours</a></li>
-							<li class="page-scroll"><a href="#pricing" class="scroll">abonnements</a></li>
-							<li class="page-scroll"><a href="#partner" class="scroll">nous localiser</a></li>
-							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+							<li class="page-scroll"><a href="#gallery" class="scroll">Nos prestations</a></li>
+							<li class="page-scroll"><a href="#pricing" class="scroll">Tarifs</a></li>
+							<li class="page-scroll"><a href="#mapsLocation" class="scroll">nous localiser</a></li>
+							<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 						</ul>
 						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
 					</nav>
@@ -125,9 +134,8 @@ jQuery.noConflict();
 			          <img src="images/slide1.jpg" alt="" class="img-slide">
 			          <div class="caption">
 			          	<div class="slide-text-info">
-			          		<span>Bienvenue</span>
-			          		<h1>Vous n'avez plus d'excuse</h1>
-			          		<label>Le meilleur endroit pour vous depasser</label>
+							<h2><span>Bienvenue aux Girondins FITNESS!</span></h2>
+			          		<h1>Si tu abandonnes une fois, cela peut devenir une habitude. N'abandonne jamais. <br><br>Michael JORDAN</h1>
 			          	</div>
 			          </div>
 			        </li>
@@ -135,9 +143,8 @@ jQuery.noConflict();
 			          <img src="images/slide2.jpg" alt="">
 			          <div class="caption">
 			          	<div class="slide-text-info">
-			          		<span>Bienvenue</span>
-			          		<h1>Vous n'avez plus d'excuse</h1>
-			          		<label>Le meilleur endroit pour vous depasser</label>
+							<h2><span>Bienvenue aux Girondins FITNESS!</span></h2>
+			          		<h1>The impossible exists only until we find a way to make it possible. <br><br>Mike HORN.</h1>
 			          	</div>
 			          </div>
 			        </li>
@@ -145,9 +152,8 @@ jQuery.noConflict();
 			          <img src="images/pompadour.jpg" alt="">
 			           <div class="caption">
 			           	<div class="slide-text-info">
-			          		<span>Bienvenue</span>
-			          		<h1>Vous n'avez plus d'excuse</h1>
-			          		<label>Le meilleur endroit pour vous depasser</label>
+			          		<h2><span>Bienvenue aux Girondins FITNESS!</span></h2>
+			          		<h1>Devenez une meilleure version de vous m&ecirc;me.</h1>
 			          	</div>
 			          </div>
 			        </li>
@@ -156,7 +162,7 @@ jQuery.noConflict();
 			    <div class="clearfix"> </div>
 			<!----- //End-slider---->
 			<!-----start-fearures---->
-			<div class="features" id="features">
+			<!--<div class="features" id="features">
 				<div class="container">
 					<div class="features-head text-center">
 						<h2>Bienvenue aux Girondins<span>FITNESS!</span></h2>
@@ -164,7 +170,7 @@ jQuery.noConflict();
 					</div>
 					<div class="feature-grids">
 						<div class="col-md-2 feature-grid">
-							<h3><span class="fea-icon1"> </span> Bien-être</h3>
+							<h3><span class="fea-icon1"> </span> Bien-&ecirc;tre</h3>
 							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
 						</div>
 						<div class="col-md-2 feature-grid">
@@ -176,17 +182,23 @@ jQuery.noConflict();
 							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
 						</div>
 						<div class="col-md-2 feature-grid">
-							<h3><span class="fea-icon4"> </span> Santé</h3>
+							<h3><span class="fea-icon4"> </span> Sant&eacute;</h3>
 							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
 						</div>
 						<div class="col-md-2 feature-grid">
 							<h3><span class="fea-icon4"> </span> Danse</h3>
 							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
 						</div>
+						<div class="col-md-2 feature-grid">
+							<h3><span class="fea-icon4"> </span> Heitz Fit</h3>
+							<p>T&eacute;l&eacute;charger l'application Heitz Fit pour vous permettre de reserver en ligne une place pour votre cours.</p>
+							<br>
+							<p>Disponible sur l'apple store et le play store.</p>
+						</div>
 						<div class="clearfix"> </div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			<!-----//End-fearures---->
 			<!-----start-actu---->
 			<div class="actu" id="actu">
@@ -197,12 +209,10 @@ jQuery.noConflict();
 					</div>
 					<div class="actu-grids">
 						<div class="col-md-12 actu-grid">
+							<h3><span class="fea-icon1"> </span> Am&eacute;lioration des installations</h3>
+							<p>Les travaux ont d&eacute;but&eacute; dans le club. Venez d&eacute;couvrir prochainemement vos nouvelles installations !</p>
 							<h3><span class="fea-icon1"> </span> Nouveau site internet</h3>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
-							<p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
+							<p>Votre nouveau site internet prend forme. Retrouvez prochainement toutes les informations concernant votre club !</p>
 						</div>
 						<div></div>
 						<div class="clearfix"> </div>
@@ -232,7 +242,7 @@ jQuery.noConflict();
 						  	</div></a>
 						  	<div class="t-member-info">
 						  		<h5>Frederic ERAY</h5>
-						  		<span>PRO INSTRUCTEUR ELITE LESMILLS</span>
+						  		<span>PRO INSTRUCTEUR ELITE LESMILLS</span><br>
 								<span>Createur du GBX FIT</span>
 						  	</div>
 						</div>
@@ -286,7 +296,7 @@ jQuery.noConflict();
 						  	</div></a>
 						  	<div class="t-member-info">
 						  		<h5>Mickael VITRE</h5>
-						  		<span>PRO INSTRUCTEUR ELITE LESMILLS</span>
+						  		<span>PRO INSTRUCTEUR ELITE LESMILLS</span><br>
 								<span>Animateur de sport sur les quais</span>
 						  	</div>
 						</div>
@@ -298,53 +308,65 @@ jQuery.noConflict();
 			<div class="gallery" id="gallery">
 				<div class="container">
 					<div class="gallery-head text-center">
-						<h3>Nos cours</h3><span> </span>
-						<h4>Voici la liste des différents cours LESMILLS que nous proposons :</h4>
+						<h3>Les prestations aux GIRONDINS FITNESS</h3><span> </span>
+						<h4>Le bien &ecirc;tre :</h4>
+						<p>Nos &eacute;ducateurs seront la pour vous accompagner dans la d&eacute;couverte de ces activit&eacute;s Bien &ecirc;tre. 
+							Celles-ci vous permettrons d'acqu&eacute;rir une meilleure maîtrise de votre corps et de votre esprit.</p>
+						<h4>Le fitness :</h4>
+						<p>Nos &eacute;ducateurs vous orienteront suivant vos demandes vers des activit&eacute;s d'endurance et de travail du centre du corps, 
+							ou vers des activit&eacute;s haute intensit&eacute; pour un travail efficace de votre cœur, ou encore des activit&eacute;s de danse.</p>
+						<h4>Le sport :</h4>
+						<p>Nos &eacute;ducateurs a la suite d'un bilan avec vous, vous am&egrave;neront vers ces activit&eacute;s sports qui vous permettront d'am&eacute;liorer 
+							vos mouvements dans la vie de tous les jours et/ou vous permettront de vous pr&eacute;parer physiquement et mentalement dans le cadre de 
+							votre pratique sportive r&eacute;guli&egrave;re.</p>
 					</div>
-					
+					<div class="text-center">
+						<br><br>
+						<p>Club affili&eacute; LesMills depuis de nombreuses ann&eacute;es, retrouvez les 8 concepts suivant tout au long de la semaine !</p>
+					</div>
 					<div class="gallery-grids">
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/bodycombat.png" alt="bodycombat">
 							</figure>
 						</div>
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/bodypump.png" alt="bodypump">
 							</figure>
 						</div>
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/rpm.png" alt="rpm">
 							</figure>
 						</div>
 						
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/sprint.png" alt="sprint">
 							</figure>
 						</div>
 						<div class="clearfix"> </div>
-					</div>
-					<div class="gallery-grids">
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+					<!--</div>
+					<div class="gallery-grids">-->
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/bodyjam.png" alt="bodyjam">
 							</figure>
 						</div>
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/bodybalance.png" alt="bodybalance">
 							</figure>
 						</div>
 
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/bodyattack.png" alt="bodyattack">
 							</figure>
 						</div>
 						
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
 								<img src="images/cxworx.png" alt="cxworx">
 							</figure>
@@ -354,36 +376,63 @@ jQuery.noConflict();
 					</div>
 
 					<div class="gallery-head text-center">
-						<h4>Nous avons également une liste de cours que vous retrouverez également aux GIRONDINS FITNESS :</h4>
+						<h4>Nous avons &eacute;galement d'autres cours pr&eacute;sents aux GIRONDINS FITNESS :</h4>
 					</div>
 					<div class="gallery-grids">
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
-								<img src="" alt="GBi, GBX fit">
+								<a href="html/gbi.html"><img src="images/logo-GBitraining-fb.jpg" alt="GBi"></a>
+							</figure>
+							<!--<div style="display: none;" id="hidden-gbi">
+								<h2><img src="images/logo-GBitraining-fb.jpg" alt="GBi"/></h2>
+								<p>Le GBI training est un conditionnement physique, accessible à tous, qui combine la force athlétique, l'haltérophilie, la gymnastique et les sports d'endurance.
+Il vient de dix compétences athlétiques : endurance cardiovasculaire et respiratoire, endurance musculaire, force, flexibilité, puissance, vitesse, agilité, coordination, équilibre et précision.
+Réussissez à vous adapter à chacun des efforts physiques rencontrés chaque jour grâce à la variété des entraînements,
+l’utilisation de mouvements poly-articulaires et l’intensité élevée du travail.
+Courrez, ramez, grimpez, sautez, déplacez des objets, réalisez des exercices au poids du corps, au TRX, utilisez des haltères, des VIPR, des Kettlebells, des Médecine Balls... Les possibilités sont infinies.
+Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de vie et vos performances ! Nos coachs et vos partenaires sont là pour vous motiver !</p>
+							</div>-->
+						</div>
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/logo-GBitraining-boxe.jpg" alt="GBi Boxe">
 							</figure>
 						</div>
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2 text-center">
 							<figure>
-								<img src="" alt="Overdanse">
+								<img src="images/logo-GBX-fit-fondbleu.jpg" alt="GBX Fit">
 							</figure>
 						</div>
-
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
-								<img src="" alt="Gym Posturale">
+								<img src="images/overdanse.jpg" alt="Overdanse">
 							</figure>
 						</div>
-						
-						<div class="col-md-3 gallery-grid grid cs-style-2">
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
 							<figure>
-								<img src="" alt="O2">
+								<img src="images/overdanse-all.jpg" alt="Overdanse All">
+							</figure>
+						</div>
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/logo-gym-posturale.jpg" alt="Gym Posturale">
+							</figure>
+						</div>
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/O2.jpg" alt="O2">
+							</figure>
+						</div>
+						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
+							<figure>
+								<img src="images/LogoTCF.jpg" alt="TCF">
 							</figure>
 						</div>
 						
 						<div class="clearfix"> </div>
 					</div>
 					<div class="gallery-head text-center">
-						<a data-fancybox="gallery" id="linkA" href="images/planning.jpg">Consulter notre planning !</a>
+						<a data-fancybox="gallery" id="linkA" href="images/planning.jpg">Consulter</a> ou <a href="images/planning.jpg" download>t&eacute;l&eacute;charger notre planning</a>
 					</div>
 				</div>
 
@@ -401,8 +450,8 @@ jQuery.noConflict();
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Santé</h4>
-								<p>490<label>€</label></p>
+								<h4>Sant&eacute;</h4>
+								<p>490<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
@@ -418,7 +467,7 @@ jQuery.noConflict();
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
 								<h4>Sport</h4>
-								<p>350<label>€</label></p>
+								<p>350<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
@@ -437,7 +486,7 @@ jQuery.noConflict();
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
 								<h4>Musculation</h4>
-								<p>279<label>€</label></p>
+								<p>279<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
@@ -454,8 +503,8 @@ jQuery.noConflict();
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Bien-être</h4>
-								<p>350<label>€</label></p>
+								<h4>Bien-&ecirc;tre</h4>
+								<p>350<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
@@ -473,7 +522,7 @@ jQuery.noConflict();
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
 								<h4>Danse</h4>
-								<p>350<label>€</label></p>
+								<p>350<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
@@ -490,13 +539,13 @@ jQuery.noConflict();
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
 								<h4>Complet</h4>
-								<p>670<label>€</label></p>
+								<p>670<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
 									<li><span> </span><a href="#">Sport</a></li>
-									<li><span> </span><a href="#">Santé</a></li>
-									<li><span> </span><a href="#">Bien-être</a></li>
+									<li><span> </span><a href="#">Sant&eacute;</a></li>
+									<li><span> </span><a href="#">Bien-&ecirc;tre</a></li>
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -516,49 +565,34 @@ jQuery.noConflict();
 					<iframe class="hidden-xs hidden-sm hidden-md visible-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 					<iframe class="hidden-xs hidden-sm visible-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="992" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					<iframe class="hidden-xs visible-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="768" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<iframe class="visible-xs hidden-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26910.014407477323!2d-0.7212324767844358!3d44.85075418486385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1498652469906" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe class="visible-xs hidden-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26910.014407477323!2d-0.7212324767844358!3d44.85075418486385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1498652469906" width="300" height="250" frameborder="0" style="border:0;margin-left: 6%" allowfullscreen></iframe>
 				</div>
 			</div>
   <div class="footer">
   	<div class="container">
 	   <div class="footer-top">
-		 	<div class="social">
-			   <ul>
-				 <li><a class="facebook-text" href="https://www.facebook.com/Girondins-Fitness-129336806637/"> <i class="facebook"> </i> Suivez-nous sur Facebook</a></li>
-				 <div class="clear"> </div>
-			  </ul>
+		 	<div class="team-head text-center">
+				<h3>NOUS CONTACTER</h3><span> </span>
 			</div>
-			<div class="clearfix"> </div>
 		</div>
 		<div class="footer-bottom" id="contact">
 		  <div class="container contact">
-      	  	 <div class="col-md-4 contact-top_left">
-			  <h3>Nos coordonnées</h3>
-			  <p>Domaine de Rocquevielle, 107 avenue Marcel Dassault, 33700 Mérignac</p>
-			  <p>Ouvert de 9h00 à 20h30 du lundi au vendredi<br>Et de 9h00 à 17h00 le samedi</p>
+      	  	 <div class="col-md-6 col-xs-12 contact-top_left">
+			  <h3>Nos coordonn&eacute;es</h3>
+			  <p>Domaine de Rocquevielle, 107 avenue Marcel Dassault, 33700 M&eacute;rignac</p>
+			  <p>Ouvert de 9h00 &agrave; 20h30 du lundi au vendredi<br>Et de 9h00 &agrave; 17h00 le samedi</p>
 			  <ul class="contact_info">
 			  	<li><i class="mobile"> </i><span>05 56 34 41 94</span></li>
-			  	<li><i class="message"> </i><span class="msg">accueil@les-girondins.com</span></li>
+			  	<li><i class="message"> </i><span class="msg"><a class="mailLink" href="mailto:accueil@les-girondins.com"> accueil@les-girondins.com </a></span></li>
 			  </ul>
 	 		 </div>
-      		 <div class="col-md-8 contact-top">
-			  <h3>Contactez-nous par email !</h3>
-			     <form method="post" action="contact-post.html">
-					<div class="to">
-                     	<input type="text" class="text" value="Nom Prenom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:20px">
-					 	<input type="text" class="text" value="Objet" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" style="margin-left:20px">
-					</div>
-					<div class="contact_bottom-textarea">
-	                   <textarea value="Votre message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Votre message</textarea>
-	                </div>
-	                <div class="form-submit1">
-			           <input name="submit" type="submit" id="submit" value="Envoyer"><br>
-			           <p class="m_msg">Veuillez entrer une adresse email valide !</p>
-					</div>
-					<div class="clear"></div>
-                 </form>
-             </div>
+			  <div class="social col-md-6 col-xs-12">
+			   <ul>
+				 <li><a class="facebook-text" target="_blank" href="https://www.facebook.com/Girondins-Fitness-129336806637/"> <img class="facebookLogo" src="./images/facebook-logo.png"/> Suivez-nous sur Facebook</a></li>
+				 <div class="clear"> </div>
+			  </ul>
+			  <img src="./images/team.jpg" class="teamPictureFooter"/>
+			</div>
             </div>
       	    
           </div>

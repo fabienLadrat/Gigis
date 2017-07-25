@@ -52,7 +52,7 @@ body a{
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
 	color: #FFFFFF;
-	background: #337ab7;
+	background: #2a3178;
 }
 .logo a{
 	display:block;
@@ -180,7 +180,7 @@ nav a#pull {
 }
 /*-----*/
 .contact-info{
-	background: #337ab7;
+	background:#2a3178;
 	position: absolute;
 	z-index: 999;
 	padding: 0 1em 0 0;
@@ -194,7 +194,7 @@ nav a#pull {
 	font-weight:300;
 }
 .contact-info span{
-	background: #337ab7;
+	background: #2a3178;
 	height: 40px;
 	width: 40px;
 	display: inline-block;
@@ -415,7 +415,7 @@ nav a#pull {
 }
 /*----*/
 .slide-text-info span{
-	background: #337ab7;
+	background: #2a3178;
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: 100;
@@ -436,21 +436,21 @@ nav a#pull {
 /*-----start-actu-----*/
 .actu{
 	padding:6em 0;
-	background:#337ab7;
+	background:white;
 }
 .actu-head h2{
-	color: white;
+	color: 202020;
 	font-size: 2.4em;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: 0;
 }
 .actu-head h2 span{
-	color:#337ab7;
+	color:#2a3178;
 }
 .actu-head p{
 	font-family: 'Droid Serif', serif;
-	color: white;
+	color: 202020;
 	font-size: 1em;
 	font-style: italic;
 	margin-top: 10px;
@@ -470,7 +470,7 @@ nav a#pull {
 	margin-right: 0.5em;
 }
 .actu-grid p{
-	color:white;
+	color:202020;
 	font-size:0.85em;
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
@@ -499,7 +499,7 @@ nav a#pull {
 	margin: 0;
 }
 .features-head h2 span{
-	color:#337ab7;
+	color:#2a3178;
 }
 .features-head p{
 	font-family: 'Droid Serif', serif;
@@ -542,7 +542,7 @@ nav a#pull {
 }
 /*----start-team----*/
 .team{
-	background:url(../images/team-bg.jpg) no-repeat 0px 0px;
+	background:#202020;
 	background-size:cover;
 	padding:6em 0;
 }
@@ -565,7 +565,7 @@ nav a#pull {
 /*	Strip
 /*-----------------------------------------------------------------------------------*/
 .dimension-photo{
-	width:255px!important;
+	/*width:255px!important;*/
 	height:100%;
 }
 .b-link-stripe{
@@ -821,7 +821,7 @@ span.default_line {
 /*-----start-pricing-plans-----*/
 .pricing-plans{
 	padding:6em 0;
-	background:#337ab7;
+	background:#202020;
 }
 .pricing-plans-head h3{
 	color: #FFF;
@@ -869,7 +869,7 @@ span.p-icon3{
 }
 .pricing-plan-grid-left{
 	margin-top:0.5em;
-	border-right: 1px solid #337ab7;
+	border-right: 1px solid #2a3178;
 }
 .pricing-plan-grid-left1{
 	margin-top:0.5em;
@@ -905,7 +905,7 @@ span.p-icon3{
 	color:#FBB;
 }
 .pricing-plan-grid {
-	background:#337ab7;
+	background:#2a3178;
 	padding:3% 0%;
 }
 .pricing-plan-middlegrid {
@@ -997,6 +997,7 @@ ul.twitter_footer li p {
 }
 .social{
 	float:right;
+	text-align: center!important;
 }
 .social li:first-child {
 	margin-left: 0;
@@ -1044,7 +1045,7 @@ ul.twitter_footer li p {
 	font-size: 0.85em;
 	padding: 0.8em 4.8em 0.8em 2em;
 	text-transform: uppercase;
-	background: url(../images/submit_arrow.png)no-repeat 186px 13px #337ab7;
+	background: url(../images/submit_arrow.png)no-repeat 186px 13px #2a3178;
 	display: inline-block;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -1079,6 +1080,7 @@ ul.twitter_footer li p {
 	text-transform: uppercase;
 	font-weight:400;
 	margin: 0 0 5px;
+	text-align: center;
 }
 .contact-top_left p {
 	color: #888;
@@ -1120,6 +1122,18 @@ ul.contact_info span.msg {
 .facebook-text{
 	color:white;
 }
+.facebook-text:hover{
+	background:#333!important;
+	color:white!important;
+	text-decoration: none!important;
+}
+.teamPictureFooter{
+	width: 30%;
+    margin-left: 40px;
+}
+.girondinslogo{
+	width: 3%;
+}
 .social li a:hover {
 	background:#fff;
 }
@@ -1127,11 +1141,14 @@ ul.contact_info span.msg {
 	width: 24px;
 	height: 24px;
 	display: block;
-	background: url(../images/social.png) no-repeat;
 }
 .social li a i.facebook {
-	background-position:-2px -2px;
+	background-image: "../images/facebook-logo.png";
 	color:white;
+}
+
+.facebookLogo{
+	width: 8%;
 }
 .social li a i.twitter {
 	background-position:-27px -2px;
@@ -1287,10 +1304,10 @@ ul.twitter_footer {
 }
 .form-submit1 input[type="submit"] {
 	padding: 0.8em 2.2em 0.8em 1em;
-	background: url(../images/submit_arrow.png)no-repeat 155px 13px #337ab7;
+	background: url(../images/submit_arrow.png)no-repeat 155px 13px #2a3178;
 }
 .form-submit1 input[type="submit"]:hover {
-	background: url(../images/submit_arrow.png)no-repeat 155px 13px #337ab7;
+	background: url(../images/submit_arrow.png)no-repeat 155px 13px #2a3178;
 }
 }
 @media (max-width:800px){
@@ -1366,6 +1383,9 @@ ul.twitter_footer {
 }
 }
 @media (max-width:480px){
+.grid {
+	padding: 10px 10px 0px 10px;
+}
 .slide-text-info h1 {
 	display: none;
 }
@@ -1385,6 +1405,7 @@ ul.twitter_footer {
 .social {
 	float: none;
 	margin-top: 20px;
+	margin-left: -20px;
 }
 ul.twitter_footer li p {
 	width: 84.5%;
@@ -1423,7 +1444,7 @@ ul.twitter_footer li p {
 	width: 100%;
 }
 .grid {
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 0px 10px;
 }
 .pricing-plan-grid-left1{
 	height: 60px;
