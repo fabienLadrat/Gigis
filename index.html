@@ -78,21 +78,24 @@ jQuery.noConflict();
 		<!-----start-container---->
 			<!----- start-header---->
 			<div id="home" class="header">
-				<div class="container">
+				<img class="logo-home" src="images/girondinsfitnesslogo3.jpg" />
+				<div class="container container-home">
 					
 					<div class="logo">
-						<a href="#">GIRONDINS FITNESS</a>
+						<!--<a href="#">GIRONDINS FITNESS</a>-->
 					</div>
 					<!----start-top-nav---->
 					 <nav class="top-nav">
 						<ul class="top-nav">
 							<li class="active"><a href="#home" class="scroll">Accueil</a></li>
 							<!--<li class="page-scroll"><a href="#features" class="scroll">Le club</a></li>-->
-							<li class="page-scroll"><a href="#actu" class="scroll">Actualites</a></li>
-							<li class="page-scroll"><a href="#team" class="scroll">Les coachs</a></li>
-							<li class="page-scroll"><a href="#gallery" class="scroll">Nos prestations</a></li>
-							<li class="page-scroll"><a href="#pricing" class="scroll">Tarifs</a></li>
-							<li class="page-scroll"><a href="#mapsLocation" class="scroll">nous localiser</a></li>
+							<li class="page-scroll"><a href="#actu" class="scroll">Actualit&eacute;s</a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">Coachs</a></li>
+							<li class="page-scroll"><a href="#gallery" class="scroll">Activit&eacute;s</a></li>
+							<li class="page-scroll"><a href="#services" class="scroll">Services</a></li>
+							<li class="page-scroll"><a href="#planning" class="scroll">Planning</a></li>
+							<li class="page-scroll"><a href="#pricing" class="scroll">Abonnements</a></li>
+							<li class="page-scroll"><a href="#mapsLocation" class="scroll">plan</a></li>
 							<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 						</ul>
 						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
@@ -202,7 +205,7 @@ jQuery.noConflict();
 			<!-----//End-fearures---->
 			<!-----start-actu---->
 			<div class="actu" id="actu">
-				<div class="container">
+				<div class="container containerActu">
 					<div class="actu-head text-center">
 						<h2>Actualites</span></h2>
 						<p>Take care of your body. It's the only place you have to live.</p>
@@ -229,7 +232,7 @@ jQuery.noConflict();
 					</div>
 					<div class="team-grids">
 						<div class="col-md-3 team-grid">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkFred" class="b-link-stripe b-animate-go  thickbox">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" data-fancybox data-type="ajax" data-src="./html/coachs.html #fred" href="javascript:;" id="linkFred" class="b-link-stripe b-animate-go  thickbox">
 						     <img class="p-img dimension-photo" src="images/fred.png" /><div class="b-wrapper">
 						     	<h2 class="b-animate b-from-left b-delay03">
 						     		<div class="animate-head">
@@ -247,7 +250,7 @@ jQuery.noConflict();
 						  	</div>
 						</div>
 						<div class="col-md-3 team-grid">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkCaro" class="b-link-stripe b-animate-go  thickbox">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" data-fancybox data-type="ajax" data-src="./html/coachs.html #caro" href="javascript:;" id="linkCaro" class="b-link-stripe b-animate-go  thickbox">
 						     <img class="p-img dimension-photo" src="images/caro.png" /><div class="b-wrapper">
 						     	<h2 class="b-animate b-from-left b-delay03">
 						     		<div class="animate-head">
@@ -265,7 +268,7 @@ jQuery.noConflict();
 						  	</div>
 						</div>
 						<div class="col-md-3 team-grid">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkMathilde" class="b-link-stripe b-animate-go  thickbox">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" data-fancybox data-type="ajax" data-src="./html/coachs.html #mathilde" href="javascript:;" id="linkMathilde" class="b-link-stripe b-animate-go  thickbox">
 						     <img class="p-img dimension-photo" src="images/mathilde.png" /><div class="b-wrapper">
 						     	<h2 class="b-animate b-from-left b-delay03">
 						     		<div class="animate-head">
@@ -283,7 +286,7 @@ jQuery.noConflict();
 						  	</div>
 						</div>
 						<div class="col-md-3 team-grid">
-							<a data-toggle="modal" data-target=".bs-example-modal-md" href="images/cv-vierge.png" data-fancybox="images" id="linkMika" class="b-link-stripe b-animate-go  thickbox">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" data-fancybox data-type="ajax" data-src="./html/coachs.html #mika" href="javascript:;" id="linkMika" class="b-link-stripe b-animate-go  thickbox">
 						     <img class="p-img dimension-photo" src="images/mika.png" /><div class="b-wrapper">
 						     	<h2 class="b-animate b-from-left b-delay03 ">
 						     		<div class="animate-head">
@@ -308,156 +311,198 @@ jQuery.noConflict();
 			<div class="gallery" id="gallery">
 				<div class="container">
 					<div class="gallery-head text-center">
-						<h3>Les prestations aux GIRONDINS FITNESS</h3><span> </span>
-						<h4>Le bien &ecirc;tre :</h4>
-						<p>Nos &eacute;ducateurs seront la pour vous accompagner dans la d&eacute;couverte de ces activit&eacute;s Bien &ecirc;tre. 
-							Celles-ci vous permettrons d'acqu&eacute;rir une meilleure maîtrise de votre corps et de votre esprit.</p>
-						<h4>Le fitness :</h4>
-						<p>Nos &eacute;ducateurs vous orienteront suivant vos demandes vers des activit&eacute;s d'endurance et de travail du centre du corps, 
-							ou vers des activit&eacute;s haute intensit&eacute; pour un travail efficace de votre cœur, ou encore des activit&eacute;s de danse.</p>
-						<h4>Le sport :</h4>
-						<p>Nos &eacute;ducateurs a la suite d'un bilan avec vous, vous am&egrave;neront vers ces activit&eacute;s sports qui vous permettront d'am&eacute;liorer 
-							vos mouvements dans la vie de tous les jours et/ou vous permettront de vous pr&eacute;parer physiquement et mentalement dans le cadre de 
-							votre pratique sportive r&eacute;guli&egrave;re.</p>
+						<h3>Nos activit&eacute;s</h3><span> </span>
 					</div>
 					<div class="text-center">
 						<br><br>
-						<p>Club affili&eacute; LesMills depuis de nombreuses ann&eacute;es, retrouvez les 8 concepts suivant tout au long de la semaine !</p>
+						<p><img class="width15pourcent" src="images/lesmills-logo.jpg" /></p>
+						<br>
+						<p>Profitez des diff&eacute;rents cours collectifs issues des concepts LesMills !</p>
 					</div>
 					<div class="gallery-grids">
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/bodycombat.png" alt="bodycombat">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #bodycombat" href="javascript:;"><img src="images/bodycombat-white.png" alt="bodycombat"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/bodypump.png" alt="bodypump">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #bodypump" href="javascript:;"><img src="images/bodypump-white.png" alt="bodypump"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/rpm.png" alt="rpm">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #rpm" href="javascript:;"><img src="images/rpm-white.png" alt="rpm"></a>
+							</div>
 						</div>
 						
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/sprint.png" alt="sprint">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #sprint" href="javascript:;"><img src="images/sprint-white-2.png" alt="sprint"></a>
+							</div>
 						</div>
 						<div class="clearfix"> </div>
 					<!--</div>
 					<div class="gallery-grids">-->
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/bodyjam.png" alt="bodyjam">
-							</figure>
+							<v class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #jam" href="javascript:;"><img src="images/bodyjam-white.png" alt="bodyjam"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/bodybalance.png" alt="bodybalance">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #bodybalance" href="javascript:;"><img src="images/bodybalance-white.png" alt="bodybalance"></a>
+							</div>
 						</div>
 
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/bodyattack.png" alt="bodyattack">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #bodyattack" href="javascript:;"><img src="images/bodyattack-white.png" alt="bodyattack"></a>
+							</div>
 						</div>
 						
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/cxworx.png" alt="cxworx">
-							</figure>
+							<div class="figurePosition">
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #cx" href="javascript:;"><img src="images/cxworx-white.png" alt="cxworx"></a>
+							</div>
 						</div>
 						
 						<div class="clearfix"> </div>
 					</div>
 
 					<div class="gallery-head text-center">
-						<h4>Nous avons &eacute;galement d'autres cours pr&eacute;sents aux GIRONDINS FITNESS :</h4>
+						<br><br>
+						<p><img class="width15pourcent" src="images/cross-training.jpg" /></p>
+						<br>
 					</div>
 					<div class="gallery-grids">
+						<div class="">
+							<div class="col-md-4 col-xs-12 gallery-grid grid cs-style-2">
+								<div class="figurePositionRight">
+									<!--<a href="html/gbi.html"><img src="images/logo-GBitraining-fb.jpg" alt="GBi"></a>-->
+									<a data-fancybox data-type="ajax" data-src="./html/cours.html #gbi" href="javascript:;"><img src="images/logo-GBitraining-fb-2.jpg" class="" alt="GBi"/></a>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12 gallery-grid grid cs-style-2">
+								<div class="figurePosition">
+									<a data-fancybox data-type="ajax" data-src="./html/cours.html #gbiboxe" href="javascript:;"><img src="images/logo-GBitraining-boxe-2.jpg" class="" alt="GBi Boxe"></a>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12 gallery-grid grid cs-style-2 text-center">
+								<divv class="figurePositionLeft">
+									<a data-fancybox data-type="ajax" data-src="./html/cours.html #gbxfit" href="javascript:;"><img src="images/logo-GBX-fit-fondbleu-3.jpg" class="" alt="GBX Fit"></a>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!--<div class="gallery-grids">
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<a href="html/gbi.html"><img src="images/logo-GBitraining-fb.jpg" alt="GBi"></a>
-							</figure>
-							<!--<div style="display: none;" id="hidden-gbi">
-								<h2><img src="images/logo-GBitraining-fb.jpg" alt="GBi"/></h2>
-								<p>Le GBI training est un conditionnement physique, accessible à tous, qui combine la force athlétique, l'haltérophilie, la gymnastique et les sports d'endurance.
-Il vient de dix compétences athlétiques : endurance cardiovasculaire et respiratoire, endurance musculaire, force, flexibilité, puissance, vitesse, agilité, coordination, équilibre et précision.
-Réussissez à vous adapter à chacun des efforts physiques rencontrés chaque jour grâce à la variété des entraînements,
-l’utilisation de mouvements poly-articulaires et l’intensité élevée du travail.
-Courrez, ramez, grimpez, sautez, déplacez des objets, réalisez des exercices au poids du corps, au TRX, utilisez des haltères, des VIPR, des Kettlebells, des Médecine Balls... Les possibilités sont infinies.
-Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de vie et vos performances ! Nos coachs et vos partenaires sont là pour vous motiver !</p>
-							</div>-->
+							<div>
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #overdanse" href="javascript:;"><img src="images/overdanse.jpg" alt="Overdanse"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/logo-GBitraining-boxe.jpg" alt="GBi Boxe">
-							</figure>
-						</div>
-						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2 text-center">
-							<figure>
-								<img src="images/logo-GBX-fit-fondbleu.jpg" alt="GBX Fit">
-							</figure>
+							<div>
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #overdanseall" href="javascript:;"><img src="images/overdanse-all.jpg" alt="Overdanse All"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/overdanse.jpg" alt="Overdanse">
-							</figure>
+							<div>
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #posturale" href="javascript:;"><img src="images/logo-gym-posturale.jpg" alt="Gym Posturale"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/overdanse-all.jpg" alt="Overdanse All">
-							</figure>
+							<div>
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #o2" href="javascript:;"><img src="images/O2.jpg" alt="O2"></a>
+							</div>
 						</div>
 						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/logo-gym-posturale.jpg" alt="Gym Posturale">
-							</figure>
-						</div>
-						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/O2.jpg" alt="O2">
-							</figure>
-						</div>
-						<div class="col-md-3 col-xs-12 gallery-grid grid cs-style-2">
-							<figure>
-								<img src="images/LogoTCF.jpg" alt="TCF">
-							</figure>
+							<div>
+								<a data-fancybox data-type="ajax" data-src="./html/cours.html #tcf" href="javascript:;"><img src="images/LogoTCF.jpg" alt="TCF"></a>
+							</div>
 						</div>
 						
 						<div class="clearfix"> </div>
-					</div>
-					<div class="gallery-head text-center">
+					</div>-->
+					<!--<div class="gallery-head text-center">
 						<a data-fancybox="gallery" id="linkA" href="images/planning.jpg">Consulter</a> ou <a href="images/planning.jpg" download>t&eacute;l&eacute;charger notre planning</a>
-					</div>
+					</div>-->
 				</div>
 
 
 				
+			</div>
+			<div class="services" id="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>Nos services</h3>
+						<span> </span>
+					</div>
+					<div class="services-grids">
+						<div class="col-md-3 services-grid ">
+							<ul>
+							<li><span class="fea-icon1"> </span> 1500 m2 de remise en forme</li>
+							<li><span class="fea-icon1"> </span> Equipe d'experts multi-comp&eacute;tences</li>
+							<li><span class="fea-icon1"> </span> Domaine sportif de 23 hectares</li>
+							</ul>
+						</div>
+						<div class="col-md-3 services-grid ">
+							<ul>
+							<li><span class="fea-icon1"> </span> Esprit club</li>
+							<li><span class="fea-icon1"> </span> Club house</li>
+							<li><span class="fea-icon1"> </span> Restauration sur place et &agrave; emporter</li>
+							<li><span class="fea-icon1"> </span> Cours en plein-air</li>
+							</ul>
+						</div>
+						<div class="col-md-3 services-grid ">
+							<ul>
+							<li><span class="fea-icon1"> </span> R&eacute;servation en ligne</li>
+							<li><span class="fea-icon1"> </span> Squash</li>
+							<li><span class="fea-icon1"> </span> Tennis</li>
+							</ul>
+						</div>
+						<div class="col-md-3 services-grid ">
+							<ul>
+							<li><span class="fea-icon1"> </span> Badminton</li>
+							<li><span class="fea-icon1"> </span> Padel (nouveaut&eacute; 2018)</li>
+							<li><span class="fea-icon1"> </span> Parcours p&eacute;destre</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="planning" id="planning">
+				<div class="container">
+					<div class="planning-head text-center">
+						<h3>planning</h3>
+						<span> </span>
+					</div>
+					<div class="planning-grids">
+						<img src="./images/planning.jpg" class="planningimg"/>
+					</div>
+				</div>
 			</div>
 			<!-----//End-gallery---->
 			<!-----start-pricing-plans---->
 			<div class="pricing-plans" id="pricing">
 				<div class="container">
 					<div class="pricing-plans-head text-center">
-						<h3>Abonnements annuel</h3><span> </span>
+						<h3>Abonnements</h3><span> </span>
 					</div>
 					<div class="pricing-plan-grids">
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Sant&eacute;</h4>
-								<p>490<label>&euro;</label></p>
+								<h4>Branche S&eacute;r&eacute;nit&eacute;</h4>
+								<p>350<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
-									<li><span> </span><a href="#">Les cours LESMILLS</a></li>
-									<li><span> </span><a href="#">Musculation</a></li>
-									<li><span> </span><a href="#">Sauna</a></li>
+									<li><span> </span><a href="#">LesMills BodyBalance</a></li>
+									<li><span> </span><a href="#">O2</a></li>
+									<li><span> </span><a href="#">Gym posturale</a></li>
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -466,17 +511,14 @@ Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de 
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Sport</h4>
+								<h4>Branche Danse</h4>
 								<p>350<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
-									<li><span> </span><a href="#">RPM</a></li>
-									<li><span> </span><a href="#">Sprint</a></li>
-									<li><span> </span><a href="#">GBi</a></li>
-									<li><span> </span><a href="#">GBX fit</a></li>
-									<li><span> </span><a href="#">Musculation</a></li>
-									<li><span> </span><a href="#">Sauna</a></li>
+									<li><span> </span><a href="#">LesMills BodyJam</a></li>
+									<li><span> </span><a href="#">Overdanse</a></li>
+									<li><span> </span><a href="#">Overdanse All</a></li>
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -503,16 +545,17 @@ Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de 
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Bien-&ecirc;tre</h4>
-								<p>350<label>&euro;</label></p>
+								<h4>Branche Efficacit&eacute;</h4>
+								<p>490<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
-									<li><span> </span><a href="#">O2</a></li>
-									<li><span> </span><a href="#">Gym posturale</a></li>
-									<li><span> </span><a href="#">LESMILLS BodyBalance</a></li>
-									<li><span> </span><a href="#">Musculation</a></li>
-									<li><span> </span><a href="#">Sauna</a></li>
+									<li><span> </span><a href="#">Branche S&eacute;r&eacute;nit&eacute;</a></li>
+									<li><span> </span><a href="#">Branche Danse</a></li>
+									<li><span> </span><a href="#">Taille, cuisses fessier</a></li>
+									<li><span> </span><a href="#">LesMills BodyAttack</a></li>
+									<li><span> </span><a href="#">LesMills BodyPump</a></li>
+									<li><span> </span><a href="#">LesMills BodyCombat</a></li>
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -521,15 +564,16 @@ Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de 
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Danse</h4>
+								<h4>Branche Haute Intensit&eacute;</h4>
 								<p>350<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
-									<li><span> </span><a href="#">LESMILLS BodyJam</a></li>
-									<li><span> </span><a href="#">Overdanse</a></li>
-									<li><span> </span><a href="#">Musculation</a></li>
-									<li><span> </span><a href="#">Sauna</a></li>
+									<li><span> </span><a href="#">LesMills RPM</a></li>
+									<li><span> </span><a href="#">LesMills Sprint</a></li>
+									<li><span> </span><a href="#">GBXFIT</a></li>
+									<li><span> </span><a href="#">GBi Training</a></li>
+									<li><span> </span><a href="#">GBi Training Boxe</a></li>
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -538,20 +582,41 @@ Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de 
 						<div class="col-md-4">
 						 <div class="pricing-plan-middlegrid">
 							<div class="col-md-5 pricing-plan-grid-left1 text-center">
-								<h4>Complet</h4>
+								<h4>Pack 4 Branches</h4>
 								<p>670<label>&euro;</label></p>
 							</div>
 							<div class="col-md-7 pricing-plan-grid-right">
 								<ul class="list-unstyled">
-									<li><span> </span><a href="#">Sport</a></li>
-									<li><span> </span><a href="#">Sant&eacute;</a></li>
-									<li><span> </span><a href="#">Bien-&ecirc;tre</a></li>
+									<li><span> </span><a href="#">Branche Efficacit&eacute;</a></li>
+									<li><span> </span><a href="#">Branche S&eacute;r&eacute;nit&eacute;</a></li>
+									<li><span> </span><a href="#">Branche Danse</a></li>
+									<li><span> </span><a href="#">Branche Haute Intensit&eacute;</a></li>
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 						</div>
 						<div class="clearfix"> </div>
+						<div class="pricing-plans-bottom text-center"><h4>Les acc&egrave;s &agrave; la salle de musculation et au sauna sont compris dans chaque abonnement.</h4></div>
+					</div>
+					<div class="pricing-plan-grids">
+						<div class="col-md-4">
+						 <div class="pricing-plan-middlegrid">
+							<div class="col-md-5 pricing-plan-grid-left1 text-center">
+								<h4>Autres tarifs</h4>
+							</div>
+							<div class="col-md-7 pricing-plan-grid-right">
+								<ul class="list-unstyled">
+									<li><span> </span><a href="#">Pass D&eacute;couverte : 44 <label>&euro;</label></a></li>
+									<li><span> </span><a href="#">Pass 10 s&eacute;ances : 100 <label>&euro;</label></a></li>
+									<li><span> </span><a href="#">Pass 20 s&eacute;ances : 189 <label>&euro;</label></a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						</div>
+						<div class="clearfix"> </div>
+						
 					</div>
 				</div>
 			</div>
@@ -560,12 +625,12 @@ Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de 
 	        <div class="mapsLocation" id="mapsLocation">
 				<div class="container">
 					<div class="mapsLocation-head text-center">
-					  <h3>Nous rejoindre</h3><span> </span>
+					  <h3>Plan</h3><span> </span>
 					</div>
 					<iframe class="hidden-xs hidden-sm hidden-md visible-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 					<iframe class="hidden-xs hidden-sm visible-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="992" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<iframe class="hidden-xs visible-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="768" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<iframe class="visible-xs hidden-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26910.014407477323!2d-0.7212324767844358!3d44.85075418486385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1498652469906" width="300" height="250" frameborder="0" style="border:0;margin-left: 6%" allowfullscreen></iframe>
+					<iframe class="hidden-xs visible-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41501.08570305245!2d-0.7296402302195656!3d44.8505180194012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1496919069681" width="710" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe class="visible-xs hidden-sm hidden-md hidden-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26910.014407477323!2d-0.7212324767844358!3d44.85075418486385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54da787f76807d%3A0xb20d24755e3c1c4d!2sGirondins+Omnisports!5e0!3m2!1sfr!2sfr!4v1498652469906" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
   <div class="footer">
@@ -578,22 +643,17 @@ Hommes, femmes, équipes sportives, le GB ITraining  améliore vos qualités de 
 		<div class="footer-bottom" id="contact">
 		  <div class="container contact">
       	  	 <div class="col-md-6 col-xs-12 contact-top_left">
-			  <h3>Nos coordonn&eacute;es</h3>
 			  <p>Domaine de Rocquevielle, 107 avenue Marcel Dassault, 33700 M&eacute;rignac</p>
 			  <p>Ouvert de 9h00 &agrave; 20h30 du lundi au vendredi<br>Et de 9h00 &agrave; 17h00 le samedi</p>
 			  <ul class="contact_info">
 			  	<li><i class="mobile"> </i><span>05 56 34 41 94</span></li>
 			  	<li><i class="message"> </i><span class="msg"><a class="mailLink" href="mailto:accueil@les-girondins.com"> accueil@les-girondins.com </a></span></li>
+				<li><a class="facebook-text" target="_blank" href="https://www.facebook.com/Girondins-Fitness-129336806637/"> <img class="facebookLogo" src="./images/facebook-logo.png"/> <span>Suivez-nous sur Facebook</span></a></li>
 			  </ul>
-	 		 </div>
-			  <div class="social col-md-6 col-xs-12">
-			   <ul>
-				 <li><a class="facebook-text" target="_blank" href="https://www.facebook.com/Girondins-Fitness-129336806637/"> <img class="facebookLogo" src="./images/facebook-logo.png"/> Suivez-nous sur Facebook</a></li>
-				 <div class="clear"> </div>
-			  </ul>
-			  <img src="./images/team.jpg" class="teamPictureFooter"/>
-			</div>
             </div>
+			<!--<div class="col-md-6 col-xs-12 div-new-maps">
+			  
+            </div>-->
       	    
           </div>
           <script type="text/javascript">
