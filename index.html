@@ -75,6 +75,16 @@ jQuery.noConflict();
 <!----//End-top-nav-script---->
 </head>
 <body class="mainclass">
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10&appId=100463887364356";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<!-----start-container---->
 			<!----- start-header---->
 			<div id="home" class="header">
@@ -138,7 +148,12 @@ jQuery.noConflict();
 			          <div class="caption">
 			          	<div class="slide-text-info">
 							<h2><span>Bienvenue aux Girondins FITNESS!</span></h2>
-			          		<h1>Si tu abandonnes une fois, cela peut devenir une habitude. N'abandonne jamais. <br><br>Michael JORDAN</h1>
+			          		<h1>Si tu abandonnes une fois, cela peut devenir une habitude. N'abandonne jamais. <br><br>Michael JORDAN <div
+						class="fb-like"
+						data-share="true"
+						data-width="450"
+						data-show-faces="true">
+						</div></h1>
 			          	</div>
 			          </div>
 			        </li>
@@ -204,19 +219,31 @@ jQuery.noConflict();
 			</div>-->
 			<!-----//End-fearures---->
 			<!-----start-actu---->
+			
 			<div class="actu" id="actu">
+				
 				<div class="container containerActu">
 					<div class="actu-head text-center">
+						
 						<h2>Actualites</span></h2>
 						<p>Take care of your body. It's the only place you have to live.</p>
+						
 					</div>
 					<div class="actu-grids">
-						<div class="col-md-12 actu-grid">
-							<h3><span class="fea-icon1"> </span> Am&eacute;lioration des installations</h3>
+
+						
+						<div class="col-md-12 actu-grid text-center">
+							<div class="fb-page hidden-xs hidden-sm hidden-md visible-lg" data-href="https://www.facebook.com/Girondins-Fitness-129336806637/" data-tabs="timeline" data-height="650" data-width="1200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Girondins-Fitness-129336806637/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Girondins-Fitness-129336806637/">Girondins Fitness</a></blockquote></div>
+							<div class="fb-page hidden-xs hidden-sm visible-md hidden-lg" data-href="https://www.facebook.com/Girondins-Fitness-129336806637/" data-tabs="timeline" data-height="600" data-width="992" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Girondins-Fitness-129336806637/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Girondins-Fitness-129336806637/">Girondins Fitness</a></blockquote></div>
+							<div class="fb-page hidden-xs visible-sm hidden-md hidden-lg" data-href="https://www.facebook.com/Girondins-Fitness-129336806637/" data-tabs="timeline" data-height="600" data-width="710" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Girondins-Fitness-129336806637/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Girondins-Fitness-129336806637/">Girondins Fitness</a></blockquote></div>
+							<div class="fb-page visible-xs hidden-sm hidden-md hidden-lg" data-href="https://www.facebook.com/Girondins-Fitness-129336806637/" data-tabs="timeline" data-height="600" data-width="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Girondins-Fitness-129336806637/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Girondins-Fitness-129336806637/">Girondins Fitness</a></blockquote></div>
+							
+							<!--<h3><span class="fea-icon1"> </span> Am&eacute;lioration des installations</h3>
 							<p>Les travaux ont d&eacute;but&eacute; dans le club. Venez d&eacute;couvrir prochainemement vos nouvelles installations !</p>
 							<h3><span class="fea-icon1"> </span> Nouveau site internet</h3>
-							<p>Votre nouveau site internet prend forme. Retrouvez prochainement toutes les informations concernant votre club !</p>
+							<p>Votre nouveau site internet prend forme. Retrouvez prochainement toutes les informations concernant votre club !</p>-->
 						</div>
+
 						<div></div>
 						<div class="clearfix"> </div>
 					</div>
@@ -370,10 +397,11 @@ jQuery.noConflict();
 						<div class="clearfix"> </div>
 					</div>
 
-					<div class="gallery-head text-center">
+					<div class="text-center">
 						<br><br>
-						<p><img class="width15pourcent" src="images/cross-training.jpg" /></p>
+						<p><img class="width8pourcent" src="images/cross-training.jpg" /></p>
 						<br>
+						<p>Diff&eacute;rentes approches de Cross Training sont pr&eacute;sentes toute la semaine.</p>
 					</div>
 					<div class="gallery-grids">
 						<div class="">
@@ -480,7 +508,7 @@ jQuery.noConflict();
 						<span> </span>
 					</div>
 					<div class="planning-grids">
-						<img src="./images/planning.jpg" class="planningimg"/>
+						<a href="images/planning.jpg" title="T&eacute;l&eacute;charger le planning" download><img src="./images/planning.jpg" class="planningimg"/></a>
 					</div>
 				</div>
 			</div>

@@ -52,7 +52,7 @@ body a{
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
 	color: #FFFFFF;
-	background: #2a3178;
+	background: #191c47;
 }
 .logo a{
 	display:block;
@@ -111,6 +111,10 @@ nav a#pull {
 
 .width15pourcent{
 	width: 15%;
+}
+
+.width8pourcent{
+	width: 8%;
 }
 
 .div-new-maps{
@@ -239,7 +243,7 @@ nav a#pull {
   box-shadow: 8px 8px 12px #202020; 
 }
 .contact-info p{
-	color: #2a3178;
+	color: #191c47;
 	font-size:1.5em;
 	margin: 0;
 	font-weight:300;
@@ -473,7 +477,7 @@ nav a#pull {
 }
 /*----*/
 .slide-text-info span{
-	background: #2a3178;
+	background: #191c47;
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: 100;
@@ -495,7 +499,7 @@ nav a#pull {
 .actu{
 	padding:6em 0;
 	/*background:white;*/
-	background:url(../images/arbre-opacity.jpg) no-repeat center center fixed; 
+	background:url(../images/arbre-opacity-2.jpg) no-repeat center center fixed; 
 	background-size: cover;
 }
 .actu .imgFond{
@@ -509,7 +513,7 @@ nav a#pull {
 	margin: 0;
 }
 .actu-head h2 span{
-	color:#2a3178;
+	color:#191c47;
 }
 .actu-head p{
 	font-family: 'Droid Serif', serif;
@@ -562,7 +566,7 @@ nav a#pull {
 	margin: 0;
 }
 .features-head h2 span{
-	color:#2a3178;
+	color:#191c47;
 }
 .features-head p{
 	font-family: 'Droid Serif', serif;
@@ -607,7 +611,7 @@ nav a#pull {
 .planning{
 	/*background:#202020;
 	background-size:cover;*/
-	background:url(../images/arbre-opacity.jpg) no-repeat center center fixed; 
+	background:url(../images/arbre-opacity-2.jpg) no-repeat center center fixed; 
 	background-size: cover;
 	padding:6em 0;
 }
@@ -888,7 +892,7 @@ span.default_line {
 }
 .gallery{
 	padding:6em 0;
-	background:url(../images/arbre-opacity.jpg) no-repeat center center fixed; 
+	background:url(../images/arbre-opacity-2.jpg) no-repeat center center fixed; 
 	background-size: cover;
 }
 .gallery-head h3{
@@ -918,7 +922,7 @@ span.default_line {
 }
 .mapsLocation{
 	padding:6em 0;
-	background:url(../images/arbre-opacity.jpg) no-repeat center center fixed; 
+	background:url(../images/arbre-opacity-2.jpg) no-repeat center center fixed; 
 	background-size: cover;
 }
 .mapsLocation-head h3{
@@ -1001,7 +1005,7 @@ span.p-icon3{
 }
 .pricing-plan-grid-left{
 	margin-top:0.5em;
-	border-right: 1px solid #2a3178;
+	border-right: 1px solid #191c47;
 }
 .pricing-plan-grid-left1{
 	margin-top:0.5em;
@@ -1037,7 +1041,7 @@ span.p-icon3{
 	color:#FBB;
 }
 .pricing-plan-grid {
-	background:#2a3178;
+	background:#191c47;
 	padding:3% 0%;
 }
 .pricing-plan-middlegrid {
@@ -1179,7 +1183,7 @@ ul.twitter_footer li p {
 	font-size: 0.85em;
 	padding: 0.8em 4.8em 0.8em 2em;
 	text-transform: uppercase;
-	background: url(../images/submit_arrow.png)no-repeat 186px 13px #2a3178;
+	background: url(../images/submit_arrow.png)no-repeat 186px 13px #191c47;
 	display: inline-block;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -1542,10 +1546,10 @@ ul.twitter_footer {
 }
 .form-submit1 input[type="submit"] {
 	padding: 0.8em 2.2em 0.8em 1em;
-	background: url(../images/submit_arrow.png)no-repeat 155px 13px #2a3178;
+	background: url(../images/submit_arrow.png)no-repeat 155px 13px #191c47;
 }
 .form-submit1 input[type="submit"]:hover {
-	background: url(../images/submit_arrow.png)no-repeat 155px 13px #2a3178;
+	background: url(../images/submit_arrow.png)no-repeat 155px 13px #191c47;
 }
 .logo-home{
 	position: absolute;
