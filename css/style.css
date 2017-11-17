@@ -457,6 +457,11 @@ nav a#pull {
   height: auto;
   border: 0;
 }
+
+.rslides img.unicef {
+  width: 35%;
+}
+
 .callbacks_tabs{
 	display:none;
 }
@@ -1453,6 +1458,50 @@ p.m_msg{
 
 
 
+/* FLA responsive design*/
+
+.titleH1Ref{
+		font:0px/0px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	.figurePositionRight{
+	float:right;
+}
+
+.figurePositionLeft{
+	float:left;
+}
+.logo-home{
+	position: absolute;
+    z-index: 1000;
+    width: 6%;
+    margin-left: 12%;
+  -moz-box-shadow: 8px 8px 12px #202020; 
+  -webkit-box-shadow: 8px 8px 12px #202020; 
+  box-shadow: 8px 8px 12px #202020; 
+}
+
+.slide-text-info h2 {
+	width: 34%;
+}
+.pricing-plan-grid-left1{
+	height: 160px;
+}
+.content {
+  max-width: 500px;
+  padding: 30px;
+}
+.relancementwidth25pourcent{
+	width: 25%;
+	float: none!important;
+}
+
+.relancementwidth24pourcent{
+	width: 24%;
+	float: none!important;
+}
+
+
+
 /*--responsive design--*/
 @media (max-width:2000px){
 	.titleH1Ref{
@@ -1982,4 +2031,10 @@ ul.twitter_footer li p {
 	width: 39%;
 	float: none!important;
 }
+
+	.unicefwidth25pourcent{
+		width: 35%;
+		float: none!important;
+	}
+
 }
